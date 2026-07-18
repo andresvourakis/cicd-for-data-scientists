@@ -1,5 +1,9 @@
 # CI/CD for Data Scientists: Hands-On Exercise
 
+Companion repo for **["CI/CD for Data Scientists: How to Automate the Engineering
+Habits You've Built"](https://read.futureproofds.com/p/cicd-for-data-scientists)**,
+the final article (5 of 5) in the **Engineering Skills for Data Scientists** series.
+
 A small, runnable companion to the article. You'll take a FastAPI service that
 already has a CI/CD pipeline wired up, watch the pipeline run on GitHub, and
 then break it on purpose to see the safety net catch you. Budget about
@@ -9,8 +13,10 @@ then break it on purpose to see the safety net catch you. Budget about
 
 ## 1. About this repo
 
-This is the same churn service from the FastAPI lesson, with one thing added: a
-**CI/CD pipeline** in [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
+This is the same churn service from the
+[FastAPI lesson](https://read.futureproofds.com/p/fastapi-for-model-serving-the-standard)
+(article 4), with one thing added: a **CI/CD pipeline** in
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 That's the whole idea of this exercise. You already built the engineering habits
 (a service, tests, a reproducible environment). CI/CD is the layer that runs them
 for you, automatically, every time you push, instead of you remembering to.
