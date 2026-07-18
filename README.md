@@ -9,8 +9,6 @@ already has a CI/CD pipeline wired up, watch the pipeline run on GitHub, and
 then break it on purpose to see the safety net catch you. Budget about
 **10-15 minutes**.
 
----
-
 ## 1. About this repo
 
 This is the same churn service from the
@@ -102,8 +100,6 @@ Want to push a little past the article? Try these:
 - **Add CI to your own project.** The real payoff: take a project you already
   have, copy `.github/workflows/ci.yml` into it, and adjust the steps. Even just
   the test step is enough to start.
-
----
 
 That's it. You've watched a pipeline test your code automatically, seen it block
 a broken change, and learned where to add a real deploy. That's CI/CD: the
