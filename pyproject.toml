@@ -1,0 +1,27 @@
+[project]
+name = "cicd-for-data-scientists"
+version = "0.1.0"
+description = "Hands-on exercise: add a CI/CD pipeline to a FastAPI service"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "joblib",
+    "pydantic",
+    "pytest",
+    "ruff",
+    "httpx2",
+]
+
+# Note: requirements.txt mirrors these dependencies for readers who prefer
+# pip/pipenv. If you change one, update the other.
+
+[tool.ruff]
+line-length = 100
+
+# Let pytest import the flat `app/` package by adding the repo root to the path.
+[tool.pytest.ini_options]
+pythonpath = ["."]

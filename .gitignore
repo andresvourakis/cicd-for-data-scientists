@@ -1,0 +1,15 @@
+# Virtual environments (uv uses .venv; the pip path uses venv/)
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Test / lint caches
+.pytest_cache/
+.ruff_cache/
+
+# Note: model/churn_model.pkl IS committed here (unlike the FastAPI lesson repo)
+# so the service and the CI pipeline run with no setup. It's tiny and
+# reproducible (fixed random seed in model/train_model.py).
